@@ -7,7 +7,7 @@ const styles = stylesButtons;
 export default Buttons = (props) => (
   <View style={styles.button}>
     {props.start ? (
-      <Button title="Pause" onPress={props.startPause} />
+      <Button title={props.title} onPress={props.startPause} />
     ) : (
       <Button title="Start" onPress={props.startPause} />
     )}
